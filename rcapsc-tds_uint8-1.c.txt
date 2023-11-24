@@ -9,4 +9,4 @@ int main() {
         temp.stuid = 1;
         printf("Temp: %hhu\n", temp.stuid);
         return 0;
-};
+}
