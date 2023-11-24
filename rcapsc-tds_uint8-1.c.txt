@@ -1,4 +1,7 @@
+// https://en.cppreference.com/w/c/types/integer
+// unsigned integer type with width of exactly 8, 16, 32 and 64 bits respectively (provided only if the implementation directly supports the type)
 #include <stdio.h>
+#include <stdint.h>
 
 typedef struct students {
          uint8_t stuid;
@@ -7,6 +10,6 @@ typedef struct students {
 int main() {
         stu temp;
         temp.stuid = 1;
-        printf("Temp: %hhu\n", temp.stuid);
+        printf("Temp: %hhu\n", sizeof(temp.stuid));
         return 0;
 }
